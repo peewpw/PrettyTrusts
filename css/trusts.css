@@ -1,0 +1,148 @@
+html,
+body {
+  font-family: Roboto, "Open Sans", sans-serif;
+  color: #646C7F;
+  font-size: 18px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  margin: 0px;
+}
+
+#dropzone {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -125px 0 0 -350px;
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+  min-height: 150px;
+  padding: 54px 54px;
+}
+
+.dropzone .dz-message {
+  font-weight: 400;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.dropzone.dz-clickable {
+  cursor: pointer;
+}
+
+.note {
+  font-size: 14px;
+}
+
+#mynetwork {
+  width: 100%;
+  height: calc(100% - 47px);
+  position: absolute;
+  left: 0;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  height: 47px;
+}
+
+/* Links inside the navbar */
+.navbar .linkbtn {
+  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+
+/* Link button */
+.linkbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+  cursor: pointer;
+}
+
+.linkleft {
+  float: left;
+  border-right: 1px solid #bbb;
+  color: white;
+  text-align: center;
+}
+
+.linkright {
+  float: right;
+  border-left: 1px solid #bbb;
+  color: white;
+  text-align: center;
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn,
+.navbar .linkbtn:hover {
+  background-color: blue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content .linkbtn:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

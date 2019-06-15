@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pretty Trusts</title>
+
+  <script type="text/javascript" src="js/papaparse.min.js"></script>
+  <script type="text/javascript" src="js/vis.min.js"></script>
+  <script type="text/javascript" src="js/trusts.js"></script>
+  <link href="css/vis.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/trusts.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="ready();">
+  <div id="dropzone">
+    <div action="alert(1)" class="dropzone needsclick dz-clickable" id="demo-upload">
+        <div class="dz-message needsclick">
+          Drop trust csv files here or click to select.<br><br>
+          <span class="note needsclick">All processing is client-side, nothing is uploaded.</span>
+        </div>
+        <input type="file" id="fileElem" onchange="handleFiles(this.files)" style="display: none;">
+    </div>
+  </div>
+
+  <div id="main" style="display: none;">
+    <div class="navbar">
+        <button class="linkbtn linkleft" onclick="location.reload();">New Mapping</button>
+        <button class="linkbtn linkleft" onclick="parseCsvData(csvData); draw();">Redraw</button>
+        <div></div>
+        <div class="dropdown" style="border-right: 1px solid #bbb;">
+          <button class="dropbtn">Arrows 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <button id="dir-of-trust" class="linkbtn" onclick="updateDir('trust')">&#x2610; Direction of Trust</button>
+            <button id="dir-of-access" class="linkbtn" onclick="updateDir('access')">&#x2611; Direction of Access</button>
+          </div>
+        </div>
+        <button class="linkbtn linkright" onclick="savePng('domain_map.png')">Download as PNG</button>
+      </div>
+    <div id="network-wrapper" style="z-index: -1;">
+      <div id="mynetwork"></div>
+    </div>
+  </div>
+</body>
+</html>
