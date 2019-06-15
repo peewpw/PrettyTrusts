@@ -1,9 +1,11 @@
 # PrettyTrusts
+**Try it out at: http://peewpw.github.io/PrettyTrusts**
+
 Visualizes the output of [PowerView's](https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1) `Get-DomainTrustMapping | Export-CSV -NoTypeInformation trusts.csv`. Hand it the csv file and get a pretty diagram to play with!
 
 *Should* work with older and new PowerView outputs.
 
-Everything is processed client-side, and no resources are loaded from outside of this repository. You can just clone/download the repository and open index.html in a browser to get started! Or go to **http://peewpw.github.io/PrettyTrusts**.
+Everything is processed client-side, and no resources are loaded from outside of this repository. You can just clone/download the repository and open index.html in a browser to get started! Or go to http://peewpw.github.io/PrettyTrusts.
 
 You can choose to have arrows display direction of access (default) or direction of trust (how Microsoft talks about trusts).
 
