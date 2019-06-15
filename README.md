@@ -3,7 +3,7 @@ Visualizes the output of [PowerView's](https://github.com/PowerShellMafia/PowerS
 
 *Should* work with older and new PowerView outputs.
 
-Everything is processed client-side, and no resources are loaded from outside of this repository. You can just clone/download the repository and open index.html in a browser to get started!
+Everything is processed client-side, and no resources are loaded from outside of this repository. You can just clone/download the repository and open index.html in a browser to get started! Or go to **http://peewpw.github.io/prettytrusts**.
 
 You can choose to have arrows display direction of access (default) or direction of trust (how Microsoft talks about trusts).
 
