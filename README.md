@@ -18,3 +18,7 @@ Credit to other projects that came before:
 [TrustVisualizer](https://github.com/HarmJ0y/TrustVisualizer)
 [DomainTrustExplorer](https://github.com/sixdub/DomainTrustExplorer/)
 [domain-trust-grapher](https://github.com/tomsteele/domain-trust-grapher)
+
+Includes:
+[vis.js](https://visjs.org/)
+[Papa Parse](https://www.papaparse.com/)
